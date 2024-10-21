@@ -37,7 +37,7 @@ class Section {
     listBooks() {
         return this.books.map(book => `${book.title} - ${book.isAvailable ? 'Available' : 'Borrowed'}`)
     }
-
+    
     calculateTotalBooksAvailable() {
         return this.getAvailableBooks();
     }
@@ -66,7 +66,7 @@ class Patron {
         }
     }
 }
-
+// Task 4 
 class VIPPatron extends Patron {
     constructor(name) {
         super(name);
@@ -83,7 +83,7 @@ class VIPPatron extends Patron {
     }
 }
 
-// Examples
+// Task 6
 const fictionSection = new Section("Fiction");
 const scienceSection = new Section("Science");
 
@@ -95,8 +95,8 @@ fictionSection.addBook(book1);
 fictionSection.addBook(book2);
 scienceSection.addBook(book3);
 
-const patron1 = new Patron("John Doe");
-const vipPatron1 = new VIPPatron("Jane Doe");
+const patron1 = new Patron("John Smith");
+const vipPatron1 = new VIPPatron("Janet Jackson");
 
 patron1.borrowBook(book1);
 vipPatron1.borrowBook(book2);
