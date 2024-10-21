@@ -42,7 +42,7 @@ class Section {
         return this.getAvailableBooks();
     }
 }
-
+// Task 3 
 class Patron {
     constructor(name) {
         this.name = name;
@@ -54,7 +54,7 @@ class Patron {
             book.isAvailable = false;
             this.borrowedBooks.push(book);
         } else {
-            console.log(`${book.title} is not available for borrowing.`);
+            console.log(`${book.title} is not available to borrow.`);
         }
     }
 
